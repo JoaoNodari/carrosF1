@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    color: #EEE;
+    font-size: 12px;
+}
+
+header {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #EEE;
+    margin-right: 40px;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+header nav a:hover {
+    background-color: rgba(0, 0, 0, 0.342);
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    margin-top: -60px;
+    
+}
+
+.container .list .list-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden; // Aqui
+}
+
+.container .list .list-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(60%);
+}
+
+.container .list .list-item .content {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    padding-right: 30%;
+    width: 80%;
+    color: #EEE;
+    text-shadow: 0 5px 10px #0004;
+}
+
+.container .list .list-item h2 {
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+
+.container .list .list-item .buttons {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    gap: 5px;
+    grid-template-rows: 40px;
+}
+
+.container .list .list-item .buttons button {
+    border: none;
+    background-color: #FFF;
+    letter-spacing: 2px;
+    font-weight: 400;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: 0.3s ease-in-out;
+}
+
+.container .list .list-item .buttons button:hover {
+    background-color: transparent;
+    border: 1px solid #EEE;
+    color: #FFF;
+}
+
+.container .list .list-item .buttons button:nth-child(2) {
+    background-color: transparent;
+    border: 1px solid #EEE;
+    color: #FFF;
+    transition: 0.3s ease-in-out;
+}
+
+.container .list .list-item .buttons button:nth-child(2):hover {
+    border: none;
+    background-color: #FFF;
+    color: black;
+}
+
+.container .thumb {
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    display: flex;
+    gap: 20px;
+}
+
+.container .thumb .thumb-item {
+    width: 135px;
+    position: relative;
+    cursor: pointer;
+    bottom: 60px;
+    border-radius: 10px;
+}
+
+.container .thumb .thumb-item:hover {
+    transform: scale(1.1);
+}
+
+.container .thumb .thumb-item img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: brightness(80%);
+}
+
+.container .thumb .thumb-item .content {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.container .thumb .thumb-item .content p {
+    font-size: 10px;
+}
+
+.container .arrows {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 120px;
+    left: 125px;
+}
+
+.container .arrows button{
+    border: 1px solid #ffffff5d;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #FFF;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.3em;
+    transition: 0.3s ease-in-out;
+}
+
+.container .arrows button:hover {
+    background-color: #FFF;
+    color: #000;
+}
