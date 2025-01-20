@@ -1,0 +1,25 @@
+@media(max-width: 1384px) {
+    .thumb {
+        flex-wrap: wrap;
+        margin-right: 90px;
+    }
+}
+
+@media(max-width: 763px) {
+    .thumb {
+        visibility: hidden;
+    }
+}
+
+@media(max-width: 414px) {
+    header {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: center;
+    }
+}
