@@ -74,9 +74,13 @@ header nav a:hover {
     grid-template-rows: 40px;
 }
 
-.container .list .list-item .buttons button {
+.container .list .list-item .buttons a {
     border: none;
     background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
     letter-spacing: 2px;
     font-weight: 400;
     cursor: pointer;
@@ -84,20 +88,20 @@ header nav a:hover {
     transition: 0.3s ease-in-out;
 }
 
-.container .list .list-item .buttons button:hover {
+.container .list .list-item .buttons a:hover {
     background-color: transparent;
     border: 1px solid #EEE;
     color: #FFF;
 }
 
-.container .list .list-item .buttons button:nth-child(2) {
+.container .list .list-item .buttons a:nth-child(2) {
     background-color: transparent;
     border: 1px solid #EEE;
     color: #FFF;
     transition: 0.3s ease-in-out;
 }
 
-.container .list .list-item .buttons button:nth-child(2):hover {
+.container .list .list-item .buttons a:nth-child(2):hover {
     border: none;
     background-color: #FFF;
     color: black;
